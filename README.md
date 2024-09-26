@@ -9,7 +9,9 @@ Certified values for seawater reference materials as pandas DataFrames.
 
 ## Usage
 
-See function docstrings for more detailed information.
+See module and function docstrings for more detailed information.
+
+### Dickson CO<sub>2</sub> CRMs
 
 ```python
     import seawater_crm as swcrm
@@ -21,5 +23,6 @@ See function docstrings for more detailed information.
     batches = [205, 206, 208]
     dic_certified = crm.loc[batches].dic
     alkalinity_certified = crm.loc[batches].alkalinity
-    # Nutrient, salinity, bottling date and flag columns are also available
 ```
+
+Nutrient, salinity, bottling date and flag columns are also available in the DataFrame, but the data in the nutrient columns are not yet complete.
